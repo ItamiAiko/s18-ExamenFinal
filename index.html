@@ -48,7 +48,7 @@
     </style>
 </head>
 <body class="bg-light">
-    
+    <div class="card border-success mb-3" style="max-width: 18rem;">
         <div class="card mt-4">
             <div class="card-header bg-utp text-white d-flex justify-content-between align-items-center">
                 <h3 class="mb-0"> CV-Gallardo Juarez Margarita Elizabeth</h3>
@@ -197,34 +197,10 @@
             </div>
         </div>
     
-
+    </div>
     <script>
-        // Timer countdown
-        function startTimer(duration, display) {
-            let timer = duration, hours, minutes, seconds;
-            setInterval(function () {
-                hours = parseInt(timer / 3600, 10);
-                minutes = parseInt((timer % 3600) / 60, 10);
-                seconds = parseInt(timer % 60, 10);
-
-                hours = hours < 10 ? "0" + hours : hours;
-                minutes = minutes < 10 ? "0" + minutes : minutes;
-                seconds = seconds < 10 ? "0" + seconds : seconds;
-
-                display.textContent = hours + ":" + minutes + ":" + seconds;
-
-                if (--timer < 0) {
-                    display.textContent = "TIEMPO TERMINADO";
-                }
-            }, 1000);
-        }
-
-        window.onload = function () {
-            let twoAndHalfHours = 2.5 * 60 * 60,
-                display = document.querySelector('#timer');
-            startTimer(twoAndHalfHours, display);
-        };
-
+       
+     
         // 1. Validación de Formulario
         const form = document.getElementById('contactForm');
         form.addEventListener('submit', (e) => {
